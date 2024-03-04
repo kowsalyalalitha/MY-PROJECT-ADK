@@ -1,0 +1,82 @@
+<!-- POSITION -->
+    <!-- Absolute, Relative, Fixed, Stricky -->
+       <!-- Absolute --- see the parent relative div css mention -->
+       <!-- Realtive --- see the inner div eduthukum (entha parent div la eruko atha eduthukum)-->
+       <!-- Fixed --- see the fix ahh erkum enthuvum marathu -->
+       <!-- Stricky --- see the inner div vittu pogathu -->
+<!-- ADDITIONAL INFO -->
+   <!-- z-index:1;  use for layer number -->
+   <!-- scroll-behavier:smooth; -->
+
+<!-- DISPLAY:flex;     ////// SEE THE WEBSITE flexbox froggy.com   ///////-->
+    <!-- gap:1rem; (if we create GAP use this) -->
+    <!-- justifycontent:space-evenly; (to set left or right) [ANY use in code base] -->
+    <!-- align-items: center; [total alignment moveing inside items] (Any use in code base)-->
+    <!-- align-content:flex-start; [evenly on on item can be moved] -->
+    <!-- flex-direction:column; OR row; OR row-reverse; (ANY use in code base) -->
+    <!-- flex-wrap: Wrap; (this use for the items can be not go outside in the border) -->
+    <!-- flex-flow: row wrap(direction and wrap,row can be cosider in same one) -->
+    <!-- flex-basis: 100px;(directly box min-width) -->
+    <!-- flex-grow: 1;(directly box thandi porathuku) -->
+    <!-- flex-shrink: 2;(identify flex border ku kamiya varathuku) -->
+    <!-- flex: 1(grow) 2(shrink) 200px (basis)-->
+    <!-- order:1 (going on ending value) -->
+    <!-- order:-1 (going on starting value) -->
+---------------------------------------------------------------------------------------------------
+PSEUDO CLASS & ELEMENTS: 
+
+<!-- pseudo class (:)
+:is(), :where(), :any-link  -->
+
+<!-- main img:not([alt]) -->
+
+<!--  pseudo elements () its kind of html element 
+ pseudo class -->
+------------------------------------------------------------------------------------------------------- 
+VARIABLES
+<!-- Variables (:root {
+   -- [give the variables name] and [var(var name)] call the variables name potukanum)  
+}-->
+
+<!-- :root{
+     --BGCOLOR: orange;
+     --FF:"Nunito", sans-serif;
+     --FS:1.5rem;
+     --FS-XL:1.5rem;
+} -->
+
+<!-- EXAMPLE:
+main{
+   font-size: var(--FS);
+   font-style: var(--FF);
+   font-size: var(--FS--XL);
+   background-color: var(--BGCOLOR);
+} -->
+
+<!-- DARK MODE
+     @media (prefers-color-scheme): dark & light-- - --(ethavuthu 1 kudu)
+   // CSS Rules-->
+<!------------------------------------------------------------------------------------------------->
+
+FUNCTION
+<!-- font-size: clamp(1.25rem, 2vh, 1.5rem) min and maxmum apply aagum use panalam -->
+
+<!-- a:hover,a:focus;{
+   filter: hue-rotate(180deg);   (deg means degree)
+   filter: brightness(200%);     (serach button kitta kondu pogum pothu bright ta kamikum)
+} -->
+
+<!-- Function using data-tooltip
+<p class="content"> let's Give <span class="tooltip"data-tooltip="my creaction"> money</span></p> 
+.tooltip{
+    border-bottom: 1px dashed darkred;
+    position: relative;
+}
+
+.tooltip:hover::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -20px;
+    background-color: cadetblue;
+}
+-->

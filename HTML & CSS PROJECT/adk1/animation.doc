@@ -1,0 +1,75 @@
+naraiya div va ANIMATION ahhh pirika, are 3 types;
+1. transform
+2. transition
+3. animation
+
+div:first-child{
+    background-color: blue;
+    transform: translateX(-50%);    X-na left side pogum for -level, Y-na right side pogum for +level. 
+    transform: rotateX(180deg);     deg- means degree.
+    transform: scaleX(200%);        X axis and Y-axis {scale} thanguthar pol virivuaakum.
+    transform: skew(10deg);         {skew} means shape aagum x,y pathu aagum.
+    }
+
+    div:nth-child(2){
+        background-color: red;
+        transform: translateY(2rem); X-na mela pogum, y-na kila varum.
+        transform: rotateY(180deg);
+        transform: scaleY(200%);
+        transform: skew(10deg);
+    }
+
+    div:last-child{
+        background-color: green;
+        transform: translate(-5rem, -20rem);
+        transform: rotateZ(78deg);    Z-means aadum (Z-axis).
+        transform: scale(50%, 50%);
+        transform: skew(-10deg, -10deg);
+    }
+
+    div:hover{
+        background-color: green;
+        transition-property: background-color;
+        transition-duration: 2s;                 2s-means seconds.
+        transition-delay: 0.5s;
+                                        mela ulla 3 um serthu epdioum kodukalam see
+        transition: all 10s  linear 0.5s;         all- means backgroundcolor.
+        transition-timing-function: linear;  { mela ulla marium podu. linear- means color lam ora level la marum bg-color ku yathar pol.}
+    }
+
+    div:first-child:hover{      take use for any child.
+        transform: rotate(180deg);        apdiya color um mari rotate aagum.
+    }
+
+    .animate{                  ------ div la yathavuthu class call oaniruntha.
+        animation-name:slide;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-direction: normal;    ------ na vacha color la rotate aagi last ta apdiya vanthuru.
+        animation-fill-mode: forwards;  ------  means- last ahh color epdiya varatum.
+        
+         ellam sarthum epdium kodukalam see
+        animation: 5s ease-in-out 1s 2 normal forwards slide;
+    }
+
+    @keyframes slide{              -----silde is name.  ------0% start la erunthu 100% ending varaikum ena nadakanum nu one by one soldrathu
+    0% {
+        transform: translateX(0);    ------- kila ulla ella X kum kodutha x-axis la varum 
+    }                                        Y kodtha kila erunthu mela pogum.  So X or Y kodukalam.
+
+    33% {
+        transform: translateX(300px) rotate (180deg) scaleX(50%);
+    }
+
+    66% {
+        transform: translateX(-300px) rotate(-180deg);  -----------scale um use panalam.
+    }
+
+    100% {
+        transform: translateX(0);
+        background-color: gray;
+    }
+    }
+    -----------transform-origin: top-center; --- means nama {menu bar} vaikum pothu use aagum. mela erunthu kila slide ahh varum.
+                                 bottom-center;  ---- kila erunthu mela varum.
